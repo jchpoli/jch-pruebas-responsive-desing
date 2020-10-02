@@ -1,0 +1,594 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?xqj4oj');
+  src:  url('../fonts/icomoon.eot?xqj4oj#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?xqj4oj') format('truetype'),
+    url('../fonts/icomoon.woff?xqj4oj') format('woff'),
+    url('../fonts/icomoon.svg?xqj4oj#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e9bd";
+}
+
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: normal;
+  /* font-style: italic; */
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 1.5;
+  letter-spacing: -0.2px;
+  color: white;
+  margin: 0;
+  /* margin: 100px 150px 70px 30px; */
+  /* text-transform: uppercase; */
+  /* text-decoration: dashed; */
+}
+h1 strong {
+  color: #026fff;
+}
+h2 {
+  color: #026fff;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.hero {
+  height: 300px;
+  /* background-image: url('../images/hero.jpg'); */
+  background-color: #1b2127;
+  /* background-size: 500px 300px; */
+  /* background-repeat: no-repeat; */
+  /* background-position-x: right; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  object-fit: cover;
+}
+
+.portfolio {
+  background: #fafafa;
+  padding: 20px;
+  /* background: red; */
+}
+
+.project {
+  /* border-top: 10px solid red;
+  border-right: 10px solid green;
+  border-left: 10px solid orange;
+  border-bottom: 10px solid pink; */
+  /* color: blue; */
+  /* border-top-color: red;
+  border-top-width: 15px;
+  border-top-style: solid; */
+  border: 1px solid gray;
+  border-radius: 10px;
+  /* border-top-left-radius: 50px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; */
+  /* margin: 10px; */
+  margin-bottom: 15px;
+  /* margin-right
+  margin-left 
+  margin-top */
+  padding: 20px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.project-course,
+.project-date,
+.project-url {
+  margin: 10px 0;
+}
+.project-description {
+  font-size: 20px;
+}
+.project strong {
+  font-family: "Fjalla One", sans-serif;
+}
+/* .project-date {
+  margin: 10px 0;
+} */
+
+.project-title {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.project-details {
+  width: 50%;
+}
+
+.project-imageContainer {
+  width: 50%;
+}
+
+.project-imageContainer img {
+  /*Para que se ajuste al tamaño del padre,
+  si el tamaño del padre no es suficiente para contener la imagen*/
+  max-width: 100%;
+}
+
+.header {
+  background-color: #1b2127;
+  color: white;
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+figure {
+  margin: 0;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+.menu {
+  height: inherit;
+}
+.header ol {
+  display: flex;
+  height: inherit;
+}
+.header ol li {
+  height: inherit;
+}
+.header a {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  padding: 0 10px;
+}
+
+.flexbox {
+  display: flex;
+  /* flex-wrap: nowrap; */
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border: 1px solid red;
+
+  flex-shrink: 0;
+}
+
+.footer {
+  color: white;
+  background-color: #1b2127;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer img {
+  vertical-align: middle;
+}
+
+.footer a {
+  color: white;
+}
+
+.event-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.event-list-title {
+  margin-left: 20px;
+}
+.event {
+  /*Se ajusta de manera relativa*/
+  margin: 1%;
+  width: 48%;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f4fbff;
+}
+.event img {
+  width: 480px;
+  height: 200px;
+  object-fit: cover;
+}
+.event-detail {
+  margin: 20px 40px;
+  margin-top: -40px;
+  background-color: white;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+.event-description {
+  text-align: left;
+}
+
+.event-url {
+  color: #056fff;
+  border: 1px solid;
+  padding: 5px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.contact {
+  background-color: #056fff;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.social {
+}
+
+.social-link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  background-size: 50px 50px;
+}
+
+.social-link.twitter {
+  background-image: url("../images/twitter.svg");
+}
+.social-link.facebook {
+  background-image: url("../images/facebook.svg");
+}
+.social-link.github {
+  background-image: url("../images/github.svg");
+}
+.social-link.instagram {
+  background-image: url("../images/instagram.svg");
+}
+
+.form-email input {
+  border-color: gray;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px 20px 10px 25px;
+  background-image: url("../images/envelope.svg");
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+}
+
+.form-email button {
+  display: block;
+  background: transparent;
+  color: white;
+  padding: 10px 0;
+  border-radius: 5px;
+  width: 100px;
+  margin-top: 10px;
+}
+
+.form-email h3 {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  flex: 1; /*Para que se expanda totalmente*/
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
+
+.html-video {
+  width: 100%;
+  height: auto;
+}
+
+.youtube-video{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right:0;
+  width: 100%;
+  height: 100%;
+}
+.flexible-video {
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.burguer-button{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /*Se centra el elemento*/
+  line-height: 40px;/*el mismo tamaño de la altura*/
+  text-align: center;
+  /*Para que nos persiga el icono sobre toda la pantalla
+  y sobre pase todos los elementos
+  */
+  position: fixed;
+  z-index: 4;
+  /*Lo movemos un poco*/
+  left: 5px;
+  top: 5px;
+  /*Se le cambia el color y la fuente*/
+  color: white;
+  background-color: rgba(0, 0, 0, .8);
+  display: none; /*Por defecto no se muestra*/
+}
+
+
+/*Desktop first, empezarb desde el media querie más grande*/
+/*Estas medidas es porque muchos dispositivos tienen estas medidas*/
+
+@media screen and (max-width: 1024px) {
+  .container {
+    /*Para ajustar el espacio a los lados para que no
+    aparezcan pegados
+    */
+    padding: 0 1em;
+  }
+  .hero {
+    /*alto automatico*/
+    height: auto;
+    position: relative;
+    padding: 2em;
+    overflow: hidden; /*Lo que esté fuera se oculte*/
+  }
+  h1 {
+    /*Cambiamos el tamaño relativo*/
+    font-size: 2em;
+    /*Para que quede una posición por encima de la imagen*/
+    z-index: 2;
+  }
+  .hero-image {
+    /*Se cambia la posición para que no sea estatica*/
+    position: absolute;
+    /*Para que quede una posición por debajo del texto*/
+    z-index: 1;
+    /*Para que no respete el padding ni nada
+    con esto el elemento se estira lo que puede
+    */
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .burguer-button{
+    display: block;
+  }
+  .header {
+    display: block; /*Que se caiga el header*/
+    height: auto; /*Para reiniciar el valor*/
+  }
+  .header ol {
+    display: block; /*Hace que la lista quede vertical*/
+  }
+  .header ol li {
+    height: 50px; /*Alto de los items del menu*/
+  }
+  .header a {
+    /*Centre el contenido de los links del menu*/
+    justify-content: center;
+    height: 40px;
+    font-size: 2em;
+    text-decoration: underline;
+    margin-bottom: .5em;
+  }
+  .header .logo {
+    /*Centre el logo ya que es una imagen*/
+    text-align: center;
+  }
+  .menu{
+    position: fixed;
+    z-index: 3;
+    /*Se ajusta la ubicación*/
+    top:0;
+    left:-100vw; /*Se esconde a la izquierda*/
+    bottom: 0;/*Para que se estire*/
+    /*Se ajusta el menu al ancho total del view port*/
+    width: 100vw;
+    /*Se centra el contenido*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(5, 111, 255, .9);
+    /*Animacion para que setee el estilo durante 0.3 seg*/
+    transition: .3s;
+  }
+
+  /*Para ponerle la clase al menu cuando queramos que se muestre*/
+  .menu.is-active{
+    left: 0;
+  }
+  .project {
+    display: block; /*Se pase abajo en esta resolucion*/
+  }
+  /*Cuando se tenga display block,es mejor darle el ancho auto
+  que 100% por velocidad de render del navegador
+  */
+  .project-imageContainer {
+    width: auto;
+  }
+  .project-details {
+    width: auto;
+    /*Los hijos se hacen realivos con em a este tamaño*/
+    font-size: 16px;
+  }
+  .project-imageContainer {
+    text-align: center;
+  }
+
+  .project-url,
+  .project-course,
+  .project-date {
+    /*Se cambia el tamaño de la margen de manera,
+    relativa, en este punto 1em vale 16px*/
+    margin: 0.3em 0;
+  }
+
+  .project-title {
+    font-size: 1.5em;
+    /*Se cambia el tamaño de la margen de manera,
+    relativa, en este punto 1em vale 16px*/
+    margin-bottom: 0.3em;
+  }
+  .project-url {
+    font-size: 1em;
+  }
+  .project-course {
+    font-size: 0.7em;
+  }
+  .project-date {
+    font-size: 1em;
+  }
+  .project-description {
+    font-size: 1em;
+  }
+
+  .event {
+    /*Se acomoda totalmente*/
+    width: auto;
+    /*Se reinicia para que no haga scroll*/
+    flex-shrink: initial;
+  }
+  /*  No sirve porque el estilo de etiqueta prevalece sobre el de clase
+  .event-image{
+    width: 100%;
+  } */
+  .event img {
+    /*Se ajusta la imagen horizaontalmente*/
+    width: 100%;
+  }
+  .portfolio{
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  .project-details {
+    /*Como en la resolución anterior los elemento hijos ya tienen
+    unidades relativas, al cambiar el tamaño de la fuente del padre,
+    se también cambirán sus hijos
+    */
+    font-size: 14px;/*De 12 a 14 para que en el telefono se vea bien*/
+  }
+  .event-detail {
+    /*Se ajusta la margen del cuadro*/
+    /*margin: -40px 10px 10px 10px;*/
+    /*1em vale 16px*/
+    margin: -2em 0.5em 0.5em;
+    padding: 1em;
+  }
+  .contact {
+    /*Se le quita el alto*/
+    height: auto;
+    /*un poco de padding, 1em vale 16px*/
+    padding: 1em;
+    /*Se centran los elementos pero se debe pasar el display de flex a block
+    porque flex no acepta ese centrado con text-align
+    */
+    text-align: center;
+    display: block;
+  }
+  .form-email button {
+    /*El em vale 10 ya que es el font-size por defecto del navegador*/
+    margin: 1em auto;
+  }
+  .form-email h3 {
+    /*Se quita la margen del texto superior*/
+    margin-top: 0;
+  }
+  .footer {
+    /*Se apilan y se centra el contenido de los elementos*/
+    display: block;
+    text-align: center;
+    /*Como el navegador por defecto de la margenes a los elementos,
+      hay que quitarlos, se puede hacer poniendo: padding o un border.
+      Al poner un borde hay que ponerlo color, pero si se pone transparente
+      se logra
+    */
+    border: 1px solid transparent;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 1.2em;
+  }
+  .hero {
+    padding: 2em 1em;
+  }
+}
